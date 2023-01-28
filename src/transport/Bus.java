@@ -8,9 +8,6 @@ public class Bus <T extends LicenseCategoryD> extends Transport  {
         this.capacity = capacity;
     }
 
-
-
-
     @Override
     public void startMoving() {
         System.out.println("Автобус марки" + getBrand() + "начал движение");

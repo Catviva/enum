@@ -46,9 +46,6 @@ public class Bus <T extends LicenseCategoryD> extends Transport  {
 
     }@Override
     public void printType() {
-
         System.out.println("Максимальнаая вместимость автобуса " + getBrand() + " - " + capacity);
-        if (capacity == null || model.isEmpty())
-            System.out.println("Данных по транспортному средству недостаточно");
     }
 }

@@ -32,6 +32,9 @@ public class Main {
         car2.printType();
         bus3.printType();
         truck4.printType();
+        car1.passDiagnostic();
+        bus3.passDiagnostic();
+
 
 
 

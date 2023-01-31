@@ -45,4 +45,9 @@ public class Truck <T extends LicenseCategoryC> extends Transport  {
     public void maxSpeed() {
         System.out.println("Мксимальная скорость");
     }
+    @Override
+    public void passDiagnostic (){
+        System.out.println("Пройти диагностику!");
+    }
+
 }

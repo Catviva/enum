@@ -41,8 +41,14 @@ public class Bus <T extends LicenseCategoryD> extends Transport  {
         int maxSpeed = ((int) (minBound + (maxBound - minBound)* Math.random()));
         System.out.println("Максимальная скорость у автобуса" + maxSpeed);
 
-    }@Override
+    }
+    @Override
     public void printType() {
         System.out.println("Максимальнаая вместимость автобуса " + getBrand() + " - " + capacity);
+    }
+    @Override
+    public void passDiagnostic () {
+        throw new TransportTypeException("Автобусы диагностику проходить не должны");
+
     }
 }

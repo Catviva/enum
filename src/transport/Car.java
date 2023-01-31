@@ -55,7 +55,10 @@ public class Car <T extends LicenseCategoryB> extends Transport  {
         int maxSpeed = ((int) (minBound + (maxBound - minBound)* Math.random()));
         System.out.println("Максимальная скорость у автомобиля " + maxSpeed);
 
-
+    }
+    @Override
+    public void passDiagnostic() {
+        System.out.println("Пройти дигностику!");
     }
 
 
